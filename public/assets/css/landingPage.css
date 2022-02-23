@@ -430,10 +430,10 @@ Resset Css
 
 @media screen and (max-width: 991px){
   .services .services-content .photo .row1 img{
-    max-height: 240px;
+    max-height: 200px;
   }
   .services .services-content .photo .row2 img{
-    max-height: 160px;
+    max-height: 142px;
   }
 }
 
@@ -441,14 +441,42 @@ Resset Css
   .services-content{
     flex-direction: column-reverse;
   }
+  .services .services-content .photo{
+    width: 100%;
+  }
+  .services .services-content .ourServices{
+    width: 100%;
+  }
+  .services .services-content .photo .row1 img{
+    max-height: 255px;
+  }
+  .services .services-content .photo .row2 img{
+    max-height: 180px;
+  }
 }
 
 @media screen and (max-width: 575px){
-  
+  .services .services-content{
+    padding: 4rem 1.5rem;
+  }
+  .services .services-content .photo .row1 img{
+    max-height: 200px;
+  }
+  .services .services-content .photo .row2 img{
+    max-height: 140px;
+  }
 }
 
 @media screen and (max-width: 474px){
-  
+  .services .services-content{
+    padding: 4rem 1rem;
+  }
+  .services .services-content .photo .row1 img{
+    max-height: 160px;
+  }
+  .services .services-content .photo .row2 img{
+    max-height: 112px;
+  }
 }
 /* End Services */
 
