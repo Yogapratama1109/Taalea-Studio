@@ -223,11 +223,20 @@
 
       // Scroll Change Background
       $(function () {
+        const navWidth = window.matchMedia("(max-width: 991px)");
+
         $(document).scroll(function () {
           var $nav = $(".navbar-fixed-top");
           $nav.toggleClass('scrolled navbar-light', $(this).scrollTop() > $nav.height());
           $nav.toggleClass('navbar-dark', $(this).scrollTop() < $nav.height());
           $(".active").toggleClass('text-black', $(this).scrollTop() > $nav.height())
+          if (navWidth.matches) {
+            if($(this).scrollTop() > $nav.height()) {
+              $(".navbar-collapse").css('background-color', 'white');
+            }else {
+              $(".navbar-collapse").css('background-color', '#393939');
+            }
+          }
         });
       });
     </script>
