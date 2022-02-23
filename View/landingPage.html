@@ -30,7 +30,7 @@
 
     <div id="app">
       <!--Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent navbar-fixed-top">
           <div class="container">
 
             <a class="navbar-brand" href="#">
@@ -41,22 +41,21 @@
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            
             <div class="navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <div class="menu ms-auto">
-                  <a class="nav-link active"href="">Home</a>
+                  <a class="nav-link active fw-bold"href="">Home</a>
                   <a class="nav-link" href="">About Us</a>
                   <a class="nav-link" href="#">Gallery</a>
                   <a class="nav-link" href="#">Services</a>
                   <a class="nav-link" href="">Partner</a>
                   <a class="nav-link" href="">Contact</a>
                 </div>
-
               </div>
             </div>
 
           </div>
+          
       </nav>
       <!--End Navbar-->
 
@@ -226,7 +225,9 @@
       $(function () {
         $(document).scroll(function () {
           var $nav = $(".navbar-fixed-top");
-          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+          $nav.toggleClass('scrolled navbar-light', $(this).scrollTop() > $nav.height());
+          $nav.toggleClass('navbar-dark', $(this).scrollTop() < $nav.height());
+          $(".active").toggleClass('text-black', $(this).scrollTop() > $nav.height())
         });
       });
     </script>
