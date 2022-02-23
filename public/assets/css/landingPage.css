@@ -26,7 +26,6 @@ Resset Css
   top: 0;
   z-index: 99999;
   width: 100%;
-  background: transparent;
 }
 
 .navbar-fixed-top.scrolled {
@@ -81,7 +80,7 @@ Resset Css
   .navbar .container .navbar-collapse {
     position: fixed;
     z-index: 100;
-    background-color: #fff;
+    background-color: #393939;
     box-shadow: 0px -70px 80px rgba(0, 0, 0, 0.0243888), 0px -21.103px 24.1177px rgba(0, 0, 0, 0.035), 0px -8.76509px 10.0172px rgba(0, 0, 0, 0.0456112), 0px -3.17016px 3.62304px rgba(0, 0, 0, 0.07);
     top: 0;
     width: 0%;
@@ -108,10 +107,6 @@ Resset Css
   .navbar .container .navbar-collapse .navbar-nav .menu .nav-link {
     padding: .7rem 0;
   }
-  .navbar .container .navbar-collapse .navbar-nav .menu .nav-link.active {
-    color: #000000;
-    font-weight: 500;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -122,10 +117,6 @@ Resset Css
     padding: 0;
     margin: .5rem 1rem;
     position: relative;
-  }
-  .navbar .container .navbar-collapse .navbar-nav .menu .nav-link.active {
-    color: #000000;
-    font-weight: 600;
   }
   .navbar .container .navbar-collapse .navbar-nav .menu .nav-link::after {
     content: '';
