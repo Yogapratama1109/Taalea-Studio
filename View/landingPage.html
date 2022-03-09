@@ -34,7 +34,7 @@
           <div class="container">
 
             <a class="navbar-brand" href="#">
-                <img src="../public/assets/image/TaaleaStudio_Logo (1) 1.png" alt="">
+                <img src="../public/assets/image/TaaleaStudio_Logo white.png" alt="">
             </a>
 
             <button class="navbar-toggler" type="button">
@@ -230,6 +230,11 @@
           $nav.toggleClass('scrolled navbar-light', $(this).scrollTop() > $nav.height());
           $nav.toggleClass('navbar-dark', $(this).scrollTop() < $nav.height());
           $(".active").toggleClass('text-black', $(this).scrollTop() > $nav.height())
+          if ($(this).scrollTop() > $nav.height()){
+            $(".navbar-brand img").attr("src", "../public/assets/image/TaaleaStudio_Logo (1) 1.png");
+          }else {
+            $(".navbar-brand img").attr("src", "../public/assets/image/TaaleaStudio_Logo white.png");
+          }
           if (navWidth.matches) {
             if($(this).scrollTop() > $nav.height()) {
               $(".navbar-collapse").css('background-color', 'white');
